@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Cricket Green & Gold Palette */
+    --background: 0.97 0.008 95;
+    --foreground: 0.18 0.02 145;
+
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.02 145;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.02 145;
+
+    /* Deep Green as primary */
+    --primary: 0.32 0.12 145;
+    --primary-foreground: 0.97 0.008 95;
+
+    /* Gold as secondary */
+    --secondary: 0.78 0.16 85;
+    --secondary-foreground: 0.18 0.02 145;
+
+    --muted: 0.93 0.01 145;
+    --muted-foreground: 0.48 0.04 145;
+
+    /* Gold accent */
+    --accent: 0.78 0.16 85;
+    --accent-foreground: 0.18 0.02 145;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.02 145;
+    --input: 0.88 0.02 145;
+    --ring: 0.32 0.12 145;
+
+    --chart-1: 0.32 0.12 145;
+    --chart-2: 0.78 0.16 85;
+    --chart-3: 0.55 0.14 145;
+    --chart-4: 0.65 0.18 85;
+    --chart-5: 0.42 0.10 145;
+
+    --sidebar: 0.32 0.12 145;
+    --sidebar-foreground: 0.97 0.008 95;
+    --sidebar-primary: 0.78 0.16 85;
+    --sidebar-primary-foreground: 0.18 0.02 145;
+    --sidebar-accent: 0.42 0.10 145;
+    --sidebar-accent-foreground: 0.97 0.008 95;
+    --sidebar-border: 0.42 0.10 145;
+    --sidebar-ring: 0.78 0.16 85;
+  }
+
+  .dark {
+    --background: 0.14 0.02 145;
+    --foreground: 0.95 0.008 95;
+
+    --card: 0.20 0.03 145;
+    --card-foreground: 0.95 0.008 95;
+
+    --popover: 0.20 0.03 145;
+    --popover-foreground: 0.95 0.008 95;
+
+    --primary: 0.78 0.16 85;
+    --primary-foreground: 0.14 0.02 145;
+
+    --secondary: 0.32 0.12 145;
+    --secondary-foreground: 0.95 0.008 95;
+
+    --muted: 0.25 0.04 145;
+    --muted-foreground: 0.65 0.04 145;
+
+    --accent: 0.78 0.16 85;
+    --accent-foreground: 0.14 0.02 145;
+
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.78 0.16 85;
+
+    --sidebar: 0.20 0.03 145;
+    --sidebar-foreground: 0.95 0.008 95;
+    --sidebar-primary: 0.78 0.16 85;
+    --sidebar-primary-foreground: 0.14 0.02 145;
+    --sidebar-accent: 0.28 0.05 145;
+    --sidebar-accent-foreground: 0.95 0.008 95;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.78 0.16 85;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+  }
+
+  .text-shadow {
+    text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(10, 40, 20, 0.85) 0%,
+      rgba(10, 40, 20, 0.6) 50%,
+      rgba(10, 40, 20, 0.4) 100%
+    );
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, oklch(0.78 0.16 85), oklch(0.68 0.18 75));
+  }
+
+  .green-gradient {
+    background: linear-gradient(135deg, oklch(0.32 0.12 145), oklch(0.25 0.10 145));
+  }
+
+  .section-divider {
+    border-top: 3px solid oklch(0.78 0.16 85);
+  }
+}

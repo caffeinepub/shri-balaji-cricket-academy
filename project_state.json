@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website for Shri Balaji Cricket Academy — a cricket coaching academy for children aged 7 and above.",
+  "architectural_notes": [
+    "Static informational website; no backend required initially"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Dynamic cricket hero banner with a cricket pitch, players in action, and dramatic lighting (hero-banner.dim_1400x600.png)\n- Young cricketers training in a cricket ground, daytime outdoor setting (gallery-1.dim_600x400.png)\n- Cricket coach instructing a young child with a cricket bat (gallery-2.dim_600x400.png)\n- Group of young cricket players in white uniforms on a green field (gallery-3.dim_600x400.png)\n- Close-up of a cricket ball and bat on grass (gallery-4.dim_600x400.png)\n- Young cricketers celebrating a win on the cricket ground (gallery-5.dim_600x400.png)\n- Cricket stumps and ball at sunset on a cricket pitch (gallery-6.dim_600x400.png)\n- Cricket academy logo with a cricket bat and ball motif in gold and green (academy-logo.dim_200x200.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-hero-section-on-the-homepage-featuring-the-academy-name-shri-balaji-cricket-academy-a-compelling-tagline-and-a-call-to-action-button-encouraging-parents-to-enroll-their-children",
+      "title": "Create a Hero section on the homepage featuring the academy name 'Shri Balaji Cricket Academy', a compelling tagline, and a call-to-action button encouraging parents to enroll their children.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-us-section-describing-the-academy-s-mission-coaching-philosophy-and-commitment-to-nurturing-young-cricket-talent",
+      "title": "Create an 'About Us' section describing the academy's mission, coaching philosophy, and commitment to nurturing young cricket talent.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-coaching-programs-section-that-highlights-the-available-programs-clearly-stating-the-minimum-age-requirement-of-7-years-for-enrollment-along-with-program-benefits-and-features",
+      "title": "Create a 'Coaching Programs' section that highlights the available programs, clearly stating the minimum age requirement of 7 years for enrollment, along with program benefits and features.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-gallery-section-displaying-a-grid-of-cricket-academy-activity-images-use-generated-placeholder-images-to-showcase-training-sessions-matches-and-academy-life",
+      "title": "Create a Gallery section displaying a grid of cricket academy activity images (use generated placeholder images) to showcase training sessions, matches, and academy life.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-enquiry-section-with-a-form-allowing-parents-to-submit-their-child-s-name-parent-s-name-phone-number-child-s-age-and-a-message-store-submitted-enquiries-in-the-backend",
+      "title": "Create a Contact/Enquiry section with a form allowing parents to submit their child's name, parent's name, phone number, child's age, and a message. Store submitted enquiries in the backend.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-sticky-navigation-bar-with-links-to-all-page-sections-home-about-programs-gallery-contact-and-the-academy-logo-name-navigation-should-be-smooth-scrolling",
+      "title": "Create a sticky navigation bar with links to all page sections (Home, About, Programs, Gallery, Contact) and the academy logo/name. Navigation should be smooth-scrolling.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bold-cricket-themed-visual-design-with-a-deep-green-and-gold-color-palette-strong-serif-display-typography-for-headings-and-a-clean-energetic-layout-evoking-a-professional-sports-academy-enforce-this-theme-consistently-across-all-sections",
+      "title": "Apply a bold cricket-themed visual design with a deep green and gold color palette, strong serif/display typography for headings, and a clean, energetic layout evoking a professional sports academy. Enforce this theme consistently across all sections.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Homepage with academy name, tagline, and hero section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "About Us section describing the academy and coaching philosophy",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Coaching programs/courses section highlighting age group (7+ years)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Contact/Enquiry form for parents to reach the academy",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Gallery or photo section showcasing academy activities",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Shri Balaji Cricket Academy",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

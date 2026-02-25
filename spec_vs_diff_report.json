@@ -1,0 +1,53 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T06:37:28.867Z",
+  "summary": "The diff implements all 7 requirements comprehensively. All sections (Hero, About, Programs, Gallery, Contact, Navbar) are present with correct content, backend storage, form validation, and cricket-themed visual design. No significant missing requirements were found. A few minor hallucinated features were added beyond the spec.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Gallery lightbox modal with prev/next navigation was added to the Gallery section",
+      "reason": "The spec only requires a responsive grid layout for the gallery. A full lightbox with keyboard/click navigation was not requested.",
+      "evidence": [
+        "frontend/src/components/GallerySection.tsx"
+      ]
+    },
+    {
+      "description": "Social media links (Facebook, Instagram, YouTube) added in the Footer",
+      "reason": "No social media links or social media presence was mentioned in the build request requirements.",
+      "evidence": [
+        "frontend/src/components/Footer.tsx"
+      ]
+    },
+    {
+      "description": "Stats row (500+ Students Trained, 7+ Years Min. Age, 15+ Expert Coaches) added in Hero section",
+      "reason": "The build request does not specify any statistics or numbers to display in the Hero section beyond the academy name, tagline, and CTA button.",
+      "evidence": [
+        "frontend/src/components/HeroSection.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.92,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AboutSection.tsx",
+    "frontend/src/components/ContactSection.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/GallerySection.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/ProgramsSection.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

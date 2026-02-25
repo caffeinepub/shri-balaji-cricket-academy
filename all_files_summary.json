@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Motoko actor that stores contact form submissions in a map keyed by child+parent name, with functions to submit new entries (trapping on duplicates) and retrieve all submissions sorted by timestamp.",
+  "feature_evidence.json": "Feature evidence report mapping each product feature (hero, about, programs, gallery, contact sections) to their corresponding source files, components, test IDs, and confidence levels.",
+  "frontend-file-summaries.txt": "JSON document containing one-line descriptions of each frontend source file, serving as a quick reference for the purpose of every component, hook, and config file in the project.",
+  "frontend/index.css": "Base Tailwind CSS file defining OKLCH-based CSS custom properties for light and dark theme color tokens (background, foreground, primary, chart colors, sidebar, etc.).",
+  "frontend/index.html": "HTML entry point for the React app, setting the page title to 'Shri Balaji Cricket Academy' and mounting the app at the #root div via main.tsx.",
+  "frontend/src/App.tsx": "Root React component that composes the full single-page layout by rendering Navbar, HeroSection, AboutSection, ProgramsSection, GallerySection, ContactSection, and Footer in order.",
+  "frontend/src/components/AboutSection.tsx": "About Us section component displaying the academy's mission text, age requirement info, a highlighted mission statement box, and a 2x2 grid of value cards with icons.",
+  "frontend/src/components/ContactSection.tsx": "Contact/Enquiry section with a react-hook-form validated form that submits child and parent details to the backend canister, showing success and error states alongside a contact info sidebar.",
+  "frontend/src/components/Footer.tsx": "Site footer with academy branding, smooth-scroll quick links, contact details, social media icon links (Facebook, Instagram, YouTube), copyright, and a caffeine.ai attribution link.",
+  "frontend/src/components/GallerySection.tsx": "Renders a responsive photo gallery grid with six cricket academy images and a lightbox modal supporting next/prev navigation.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with background image, academy name, tagline, CTA buttons for enrollment and about, and a stats row.",
+  "frontend/src/components/Navbar.tsx": "Fixed top navigation bar with logo, desktop nav links, an enroll button, and a collapsible mobile menu with smooth-scroll behavior.",
+  "frontend/src/components/ProgramsSection.tsx": "Displays three tiered cricket coaching program cards (Junior Starter, Rising Stars, Elite Performer) with features, badges, and a contact CTA.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor (anonymous or authenticated) using React Query, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an InternetIdentityProvider and useInternetIdentity hook for managing ICP Internet Identity authentication state, login, and logout via AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Exports a useSubmitContactForm mutation hook that calls the backend actor's submitContactForm method and invalidates the submissions query on success.",
+  "frontend/src/index.css": "Global CSS file that imports Google Fonts (Playfair Display, Inter), sets up Tailwind base/components/utilities, defines CSS custom properties for a cricket-themed green and gold color palette (light and dark modes), and adds utility classes for gradients, text shadows, and section dividers.",
+  "frontend/src/main.tsx": "React app entry point that wraps the App component with QueryClientProvider (React Query) and InternetIdentityProvider before mounting to the DOM root.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the theme with custom cricket brand colors (green/gold/cream), Playfair Display and Inter font families, custom shadows, border radii, and animation keyframes (accordion, fade-in, slide-in), with typography, container-queries, and animate plugins enabled.",
+  "project_state.json": "Project state manifest (version 3) describing the Shri Balaji Cricket Academy static website, listing existing features (hero, about, programs, gallery, contact form, navbar, theming), required placeholder images, architectural notes, and feature/requirement metadata."
+}

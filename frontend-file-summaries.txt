@@ -1,0 +1,13 @@
+{
+  "frontend/src/index.css": "Global CSS with cricket-themed OKLCH color system (deep green + gold palette), Google Fonts import for Playfair Display and Inter, and utility classes for hero overlay, gold/green gradients, and text shadows.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom cricket brand colors (cricket-green, cricket-gold, cricket-cream, cricket-charcoal), Playfair Display/Inter font families, custom shadows, and fade-in animations.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook for submitting contact form data to the backend canister via the submitContactForm method.",
+  "frontend/src/components/Navbar.tsx": "Sticky navigation bar with academy logo, smooth-scroll links to all sections, gold CTA button, and responsive mobile hamburger menu.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with hero banner background, academy name, tagline, stats row, dual CTA buttons, and animated scroll indicator.",
+  "frontend/src/components/AboutSection.tsx": "About Us section with academy mission text, coaching philosophy, and a 4-card values grid (Focused Training, Expert Coaches, Award, Heart).",
+  "frontend/src/components/ProgramsSection.tsx": "Coaching Programs section with three tiered program cards (Junior Starter, Rising Stars, Elite Performer), age requirement banner, and feature checklists.",
+  "frontend/src/components/GallerySection.tsx": "Responsive 6-image gallery grid with hover overlays, captions, and a lightbox modal with prev/next navigation.",
+  "frontend/src/components/ContactSection.tsx": "Contact/Enquiry section with a validated form (child's name, parent's name, phone, age ≥7, message), backend submission via mutation, success state, and academy contact info sidebar.",
+  "frontend/src/components/Footer.tsx": "Footer with academy branding, quick links, contact info, social icons, copyright, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/App.tsx": "Root application component composing Navbar, all page sections (Hero, About, Programs, Gallery, Contact), and Footer in a single-page layout."
+}

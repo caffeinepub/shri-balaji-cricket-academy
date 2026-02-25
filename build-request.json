@@ -1,0 +1,153 @@
+{
+  "kind": "build_request",
+  "title": "Shri Balaji Cricket Academy Website",
+  "projectName": "Balaji Cricket Academy",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a Hero section on the homepage featuring the academy name 'Shri Balaji Cricket Academy', a compelling tagline, and a call-to-action button encouraging parents to enroll their children.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "MAKE A WEBSITE FOR A CRICKET ACADEMY NAMED SHRI BALAJI CRICKET ACADEMY"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Academy name 'Shri Balaji Cricket Academy' is prominently displayed in the hero section",
+        "A tagline is visible below the academy name",
+        "A call-to-action button (e.g., 'Enroll Now' or 'Get Started') is present and scrolls to the contact/enquiry form"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create an 'About Us' section describing the academy's mission, coaching philosophy, and commitment to nurturing young cricket talent.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "MAKE A WEBSITE FOR A CRICKET ACADEMY"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About Us section is present on the page",
+        "Section includes text about the academy's mission and coaching philosophy",
+        "Section is visually distinct and easy to read"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a 'Coaching Programs' section that highlights the available programs, clearly stating the minimum age requirement of 7 years for enrollment, along with program benefits and features.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "WE COACH CHILDREN ABOVE AGE 7 YEARS"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Coaching Programs section is present on the page",
+        "Minimum age of 7 years is explicitly mentioned",
+        "Program cards or list items display key features and benefits",
+        "Section is clearly organized and easy to scan"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create a Gallery section displaying a grid of cricket academy activity images (use generated placeholder images) to showcase training sessions, matches, and academy life.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Gallery section is present on the page",
+        "Images are displayed in a responsive grid layout",
+        "Section has a clear heading such as 'Gallery' or 'Our Academy in Action'"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a Contact/Enquiry section with a form allowing parents to submit their child's name, parent's name, phone number, child's age, and a message. Store submitted enquiries in the backend.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "WE COACH CHILDREN ABOVE AGE 7 YEARS"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact form includes fields: child's name, parent's name, phone number, child's age, and message",
+        "Form validates that the child's age is 7 or above",
+        "On submission, the enquiry data is saved in the backend",
+        "A success confirmation message is shown after successful submission",
+        "Academy contact details (phone, address placeholder) are shown alongside the form"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create a sticky navigation bar with links to all page sections (Home, About, Programs, Gallery, Contact) and the academy logo/name. Navigation should be smooth-scrolling.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation bar is sticky and visible on scroll",
+        "All section links are present and scroll smoothly to their respective sections",
+        "Academy name or logo is displayed in the navbar",
+        "Navigation is responsive and collapses appropriately on mobile screens"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Apply a bold cricket-themed visual design with a deep green and gold color palette, strong serif/display typography for headings, and a clean, energetic layout evoking a professional sports academy. Enforce this theme consistently across all sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Deep green and gold are the dominant brand colors used throughout the site",
+        "Headings use a strong, prominent typography style",
+        "Visual theme is consistent across all sections",
+        "Overall design feels professional and suitable for a sports coaching academy"
+      ]
+    }
+  ],
+  "constraints": [
+    "Academy name must always appear as 'Shri Balaji Cricket Academy' exactly",
+    "Minimum enrollment age of 7 years must be clearly communicated wherever programs are mentioned"
+  ],
+  "nonGoals": [
+    "Online payment or fee collection functionality",
+    "User authentication or parent/student login portal",
+    "Live match scores or cricket news feed integration",
+    "Multi-language support"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Dynamic cricket hero banner with a cricket pitch, players in action, and dramatic lighting (hero-banner.dim_1400x600.png)",
+      "Young cricketers training in a cricket ground, daytime outdoor setting (gallery-1.dim_600x400.png)",
+      "Cricket coach instructing a young child with a cricket bat (gallery-2.dim_600x400.png)",
+      "Group of young cricket players in white uniforms on a green field (gallery-3.dim_600x400.png)",
+      "Close-up of a cricket ball and bat on grass (gallery-4.dim_600x400.png)",
+      "Young cricketers celebrating a win on the cricket ground (gallery-5.dim_600x400.png)",
+      "Cricket stumps and ball at sunset on a cricket pitch (gallery-6.dim_600x400.png)",
+      "Cricket academy logo with a cricket bat and ball motif in gold and green (academy-logo.dim_200x200.png)"
+    ],
+    "edits": []
+  }
+}
