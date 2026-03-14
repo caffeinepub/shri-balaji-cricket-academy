@@ -1,13 +1,12 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
+  "projectStateVersion": 5,
   "summary": "Website for Shri Balaji Cricket Academy — a cricket coaching academy for children aged 7 and above.",
   "architectural_notes": [
     "Static informational website; no backend required initially"
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Dynamic cricket hero banner with a cricket pitch, players in action, and dramatic lighting (hero-banner.dim_1400x600.png)\n- Young cricketers training in a cricket ground, daytime outdoor setting (gallery-1.dim_600x400.png)\n- Cricket coach instructing a young child with a cricket bat (gallery-2.dim_600x400.png)\n- Group of young cricket players in white uniforms on a green field (gallery-3.dim_600x400.png)\n- Close-up of a cricket ball and bat on grass (gallery-4.dim_600x400.png)\n- Young cricketers celebrating a win on the cricket ground (gallery-5.dim_600x400.png)\n- Cricket stumps and ball at sunset on a cricket pitch (gallery-6.dim_600x400.png)\n- Cricket academy logo with a cricket bat and ball motif in gold and green (academy-logo.dim_200x200.png)",
   "existing_features": [
     {
       "id": "feature-create-a-hero-section-on-the-homepage-featuring-the-academy-name-shri-balaji-cricket-academy-a-compelling-tagline-and-a-call-to-action-button-encouraging-parents-to-enroll-their-children",
@@ -64,6 +63,22 @@
         "REQ-7"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-display-the-full-academy-address-shri-balaji-cricket-academy-malerna-gaon-ballabgarh-faridabad-121004-in-the-contact-section-s-contact-info-sidebar-alongside-the-existing-phone-email-details",
+      "title": "Display the full academy address — 'Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004' — in the Contact section's contact info sidebar, alongside the existing phone/email details.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-full-academy-address-shri-balaji-cricket-academy-malerna-gaon-ballabgarh-faridabad-121004-in-the-site-footer-s-contact-details-area",
+      "title": "Display the full academy address — 'Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004' — in the site Footer's contact details area.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -94,6 +109,12 @@
     {
       "id": "AR-5",
       "summary": "Gallery or photo section showcasing academy activities",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add academy address (Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004) to the website, likely in the contact/footer section",
       "reqIds": [],
       "status": "pending"
     }

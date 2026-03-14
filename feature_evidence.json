@@ -2,86 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-hero-section-on-the-homepage-featuring-the-academy-name-shri-balaji-cricket-academy-a-compelling-tagline-and-a-call-to-action-button-encouraging-parents-to-enroll-their-children",
-      "featureTitle": "Create a Hero section on the homepage featuring the academy name 'Shri Balaji Cricket Academy', a compelling tagline, and a call-to-action button encouraging parents to enroll their children.",
+      "featureId": "feature-display-the-full-academy-address-shri-balaji-cricket-academy-malerna-gaon-ballabgarh-faridabad-121004-in-the-contact-section-s-contact-info-sidebar-alongside-the-existing-phone-email-details",
+      "featureTitle": "Display the full academy address — 'Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004' — in the Contact section's contact info sidebar, alongside the existing phone/email details.",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/HeroSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-an-about-us-section-describing-the-academy-s-mission-coaching-philosophy-and-commitment-to-nurturing-young-cricket-talent",
-      "featureTitle": "Create an 'About Us' section describing the academy's mission, coaching philosophy, and commitment to nurturing young cricket talent.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/AboutSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-coaching-programs-section-that-highlights-the-available-programs-clearly-stating-the-minimum-age-requirement-of-7-years-for-enrollment-along-with-program-benefits-and-features",
-      "featureTitle": "Create a 'Coaching Programs' section that highlights the available programs, clearly stating the minimum age requirement of 7 years for enrollment, along with program benefits and features.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/ProgramsSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-gallery-section-displaying-a-grid-of-cricket-academy-activity-images-use-generated-placeholder-images-to-showcase-training-sessions-matches-and-academy-life",
-      "featureTitle": "Create a Gallery section displaying a grid of cricket academy activity images (use generated placeholder images) to showcase training sessions, matches, and academy life.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/GallerySection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-4"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-contact-enquiry-section-with-a-form-allowing-parents-to-submit-their-child-s-name-parent-s-name-phone-number-child-s-age-and-a-message-store-submitted-enquiries-in-the-backend",
-      "featureTitle": "Create a Contact/Enquiry section with a form allowing parents to submit their child's name, parent's name, phone number, child's age, and a message. Store submitted enquiries in the backend.",
-      "files": [
-        "frontend/src/App.tsx",
         "frontend/src/components/ContactSection.tsx"
       ],
       "components": [
@@ -92,16 +15,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-5"
+        "REQ-8"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-create-a-sticky-navigation-bar-with-links-to-all-page-sections-home-about-programs-gallery-contact-and-the-academy-logo-name-navigation-should-be-smooth-scrolling",
-      "featureTitle": "Create a sticky navigation bar with links to all page sections (Home, About, Programs, Gallery, Contact) and the academy logo/name. Navigation should be smooth-scrolling.",
+      "featureId": "feature-display-the-full-academy-address-shri-balaji-cricket-academy-malerna-gaon-ballabgarh-faridabad-121004-in-the-site-footer-s-contact-details-area",
+      "featureTitle": "Display the full academy address — 'Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004' — in the site Footer's contact details area.",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Navbar.tsx"
+        "frontend/src/components/Footer.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -111,26 +33,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-a-bold-cricket-themed-visual-design-with-a-deep-green-and-gold-color-palette-strong-serif-display-typography-for-headings-and-a-clean-energetic-layout-evoking-a-professional-sports-academy-enforce-this-theme-consistently-across-all-sections",
-      "featureTitle": "Apply a bold cricket-themed visual design with a deep green and gold color palette, strong serif/display typography for headings, and a clean, energetic layout evoking a professional sports academy. Enforce this theme consistently across all sections.",
-      "files": [
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
+        "REQ-9"
       ],
       "confidence": "high"
     }

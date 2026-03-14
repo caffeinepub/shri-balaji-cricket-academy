@@ -7,7 +7,7 @@
   "frontend/src/components/AboutSection.tsx": "About Us section with academy mission text, coaching philosophy, and a 4-card values grid (Focused Training, Expert Coaches, Award, Heart).",
   "frontend/src/components/ProgramsSection.tsx": "Coaching Programs section with three tiered program cards (Junior Starter, Rising Stars, Elite Performer), age requirement banner, and feature checklists.",
   "frontend/src/components/GallerySection.tsx": "Responsive 6-image gallery grid with hover overlays, captions, and a lightbox modal with prev/next navigation.",
-  "frontend/src/components/ContactSection.tsx": "Contact/Enquiry section with a validated form (child's name, parent's name, phone, age ≥7, message), backend submission via mutation, success state, and academy contact info sidebar.",
-  "frontend/src/components/Footer.tsx": "Footer with academy branding, quick links, contact info, social icons, copyright, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/ContactSection.tsx": "Contact/Enquiry section with a validated form (child's name, parent's name, phone, age ≥7, message), backend submission via mutation, success state, and academy contact info sidebar showing the real address (Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad – 121004) with a MapPin icon.",
+  "frontend/src/components/Footer.tsx": "Footer with academy branding, quick links, contact info (address with MapPin icon showing Malerna Gaon, Ballabgarh, Faridabad – 121004, plus phone and email), social icons, copyright, and caffeine.ai attribution with UTM tracking.",
   "frontend/src/App.tsx": "Root application component composing Navbar, all page sections (Hero, About, Programs, Gallery, Contact), and Footer in a single-page layout."
 }

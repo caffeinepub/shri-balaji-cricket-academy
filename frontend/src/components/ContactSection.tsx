@@ -84,11 +84,11 @@ export default function ContactSection() {
                   <div>
                     <p className="font-body font-semibold text-cricket-charcoal text-sm">Address</p>
                     <p className="font-body text-muted-foreground text-sm">
-                      Shri Balaji Cricket Ground,
+                      Shri Balaji Cricket Academy,
                       <br />
-                      Sports Complex Road,
+                      Malerna Gaon, Ballabgarh,
                       <br />
-                      Your City, State – 000000
+                      Faridabad – 121004
                     </p>
                   </div>
                 </div>

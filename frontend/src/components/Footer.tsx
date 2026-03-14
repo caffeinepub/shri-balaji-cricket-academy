@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react';
+import { Heart, MapPin, Phone, Mail } from 'lucide-react';
 import { SiFacebook, SiInstagram, SiYoutube } from 'react-icons/si';
 
 const navLinks = [
@@ -72,15 +72,15 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display font-bold text-cricket-gold text-base mb-4">
+            <h4 className="font-display font-bold text-cricket-gold text-base mb-4 uppercase tracking-wide">
               Quick Links
             </h4>
             <ul className="space-y-2">
               {navLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <button
                     onClick={() => handleNavClick(link.href)}
-                    className="font-body text-cricket-cream/60 text-sm hover:text-cricket-gold transition-colors duration-200"
+                    className="font-body text-cricket-cream/60 text-sm hover:text-cricket-gold transition-colors duration-200 text-left"
                   >
                     {link.label}
                   </button>
@@ -91,37 +91,48 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-display font-bold text-cricket-gold text-base mb-4">
+            <h4 className="font-display font-bold text-cricket-gold text-base mb-4 uppercase tracking-wide">
               Contact Us
             </h4>
-            <div className="space-y-2 font-body text-cricket-cream/60 text-sm">
-              <p>📞 +91 98765 43210</p>
-              <p>✉️ info@shribalajicriacademy.com</p>
-              <p>
-                📍 Shri Balaji Cricket Ground,
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Sports Complex Road,
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Your City, State
-              </p>
-            </div>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <MapPin size={16} className="text-cricket-gold mt-0.5 flex-shrink-0" />
+                <span className="font-body text-cricket-cream/60 text-sm leading-relaxed">
+                  Shri Balaji Cricket Academy,
+                  <br />
+                  Malerna Gaon, Ballabgarh,
+                  <br />
+                  Faridabad – 121004
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone size={16} className="text-cricket-gold flex-shrink-0" />
+                <span className="font-body text-cricket-cream/60 text-sm">+91 98765 43210</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail size={16} className="text-cricket-gold flex-shrink-0" />
+                <span className="font-body text-cricket-cream/60 text-sm">
+                  info@shribalajicriacademy.com
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-cricket-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="font-body text-cricket-cream/40 text-xs text-center sm:text-left">
+          <p className="font-body text-cricket-cream/40 text-xs">
             © {year} Shri Balaji Cricket Academy. All rights reserved.
           </p>
           <p className="font-body text-cricket-cream/40 text-xs flex items-center gap-1">
             Built with{' '}
-            <Heart size={12} className="text-cricket-gold fill-cricket-gold mx-0.5" />{' '}
+            <Heart size={12} className="text-cricket-gold fill-cricket-gold" />{' '}
             using{' '}
             <a
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appId}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cricket-gold hover:underline"
+              className="text-cricket-gold hover:text-cricket-gold/80 transition-colors"
             >
               caffeine.ai
             </a>

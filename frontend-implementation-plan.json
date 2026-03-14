@@ -1,157 +1,37 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Shri Balaji Cricket Academy Website - Frontend Implementation",
+  "title": "Add academy address to Contact section and Footer",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Create a Hero section with academy name, tagline, and call-to-action button",
+      "id": "REQ-8",
+      "summary": "Display the full academy address in the Contact section's info sidebar alongside existing phone/email details",
       "acceptanceCriteria": [
-        "Academy name 'Shri Balaji Cricket Academy' is prominently displayed in the hero section",
-        "A tagline is visible below the academy name",
-        "A call-to-action button (e.g., 'Enroll Now' or 'Get Started') is present and scrolls to the contact/enquiry form"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/HeroSection.tsx",
-          "operation": "create",
-          "description": "Create a Hero component featuring the academy name 'Shri Balaji Cricket Academy', a compelling tagline, and a call-to-action button that scrolls to the contact form. Use the generated hero banner image at frontend/public/assets/generated/hero-banner.dim_1400x600.png as the background. Apply deep green and gold color palette with strong typography for the heading. Include smooth scroll behavior for the CTA button."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the HeroSection component at the top of the main application layout. Ensure it is the first visible section on the homepage."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Create an About Us section describing the academy's mission and coaching philosophy",
-      "acceptanceCriteria": [
-        "About Us section is present on the page",
-        "Section includes text about the academy's mission and coaching philosophy",
-        "Section is visually distinct and easy to read"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/AboutSection.tsx",
-          "operation": "create",
-          "description": "Create an AboutSection component with content describing the academy's mission to nurture young cricket talent and the coaching philosophy. Use a visually distinct layout with consistent cricket-themed styling (deep green and gold colors). Ensure the text is well-structured and readable."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the AboutSection component below the HeroSection. Add an id attribute 'about' to enable smooth scrolling from navigation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Create a Coaching Programs section highlighting programs with minimum age requirement of 7 years",
-      "acceptanceCriteria": [
-        "Coaching Programs section is present on the page",
-        "Minimum age of 7 years is explicitly mentioned",
-        "Program cards or list items display key features and benefits",
-        "Section is clearly organized and easy to scan"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/ProgramsSection.tsx",
-          "operation": "create",
-          "description": "Create a ProgramsSection component displaying available coaching programs. Clearly state the minimum enrollment age of 7 years in prominent text. Display program benefits and features in an organized card-based or list layout. Use cricket-themed styling consistent with the overall design. Ensure the section is scannable and visually engaging."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the ProgramsSection component below the AboutSection. Add an id attribute 'programs' for smooth scrolling navigation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Create a Gallery section displaying cricket academy activity images in a responsive grid",
-      "acceptanceCriteria": [
-        "Gallery section is present on the page",
-        "Images are displayed in a responsive grid layout",
-        "Section has a clear heading such as 'Gallery' or 'Our Academy in Action'"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/GallerySection.tsx",
-          "operation": "create",
-          "description": "Create a GallerySection component displaying a responsive grid of cricket academy images. Use the generated gallery images: frontend/public/assets/generated/gallery-1.dim_600x400.png, frontend/public/assets/generated/gallery-2.dim_600x400.png, frontend/public/assets/generated/gallery-3.dim_600x400.png, frontend/public/assets/generated/gallery-4.dim_600x400.png, frontend/public/assets/generated/gallery-5.dim_600x400.png, and frontend/public/assets/generated/gallery-6.dim_600x400.png. Include a clear heading like 'Gallery' or 'Our Academy in Action'. Ensure the grid is responsive and adapts to different screen sizes."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the GallerySection component below the ProgramsSection. Add an id attribute 'gallery' for navigation purposes."
-        }
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "summary": "Create a Contact/Enquiry section with form for parents to submit enquiry data to the backend",
-      "acceptanceCriteria": [
-        "Contact form includes fields: child's name, parent's name, phone number, child's age, and message",
-        "Form validates that the child's age is 7 or above",
-        "On submission, the enquiry data is saved in the backend",
-        "A success confirmation message is shown after successful submission",
-        "Academy contact details (phone, address placeholder) are shown alongside the form"
+        "The address 'Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004' is visible in the Contact section's info sidebar.",
+        "The address is accompanied by a location/map pin icon consistent with the existing cricket-themed design.",
+        "The address text uses the same typography and color palette as other contact details in that section."
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/ContactSection.tsx",
-          "operation": "create",
-          "description": "Create a ContactSection component with a form containing fields for child's name, parent's name, phone number, child's age, and message. Implement validation to ensure child's age is 7 or above. On form submission, call the backend.submitContactForm method from the backend interface with the form data. Display a success message upon successful submission. Include academy contact details (placeholder phone and address) alongside the form. Handle loading and error states appropriately."
-        },
-        {
-          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Import and render the ContactSection component below the GallerySection. Add an id attribute 'contact' to enable smooth scrolling from the hero CTA and navigation bar."
+          "description": "Add the academy address 'Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004' to the contact info sidebar. Include a MapPin icon from lucide-react (or an appropriate location icon) alongside the address text. Ensure the address uses the same card styling, typography, and spacing as the existing phone and email contact details. Position the address entry appropriately within the sidebar's contact information list."
         }
       ]
     },
     {
-      "id": "REQ-6",
-      "summary": "Create a sticky navigation bar with smooth-scrolling links to all sections",
+      "id": "REQ-9",
+      "summary": "Display the full academy address in the site Footer's contact details area",
       "acceptanceCriteria": [
-        "Navigation bar is sticky and visible on scroll",
-        "All section links are present and scroll smoothly to their respective sections",
-        "Academy name or logo is displayed in the navbar",
-        "Navigation is responsive and collapses appropriately on mobile screens"
+        "The address 'Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004' appears in the Footer alongside existing contact details.",
+        "The address is accompanied by a location/map pin icon consistent with the footer's existing icon style.",
+        "The address is readable against the footer's background color and follows the established green and gold theme."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Navbar.tsx",
-          "operation": "create",
-          "description": "Create a Navbar component with a sticky position that remains visible on scroll. Include navigation links to Home, About, Programs, Gallery, and Contact sections with smooth-scrolling behavior. Display the academy logo from frontend/public/assets/generated/academy-logo.dim_200x200.png and/or the academy name 'Shri Balaji Cricket Academy'. Implement responsive design with a mobile-friendly collapsed menu. Use the cricket-themed color palette (deep green and gold)."
-        },
-        {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Import and render the Navbar component at the top of the application layout above all sections. Ensure it remains sticky across all scroll positions."
-        }
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "summary": "Apply a bold cricket-themed visual design with deep green and gold colors throughout the site",
-      "acceptanceCriteria": [
-        "Deep green and gold are the dominant brand colors used throughout the site",
-        "Headings use a strong, prominent typography style",
-        "Visual theme is consistent across all sections",
-        "Overall design feels professional and suitable for a sports coaching academy"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Update global CSS to define the cricket-themed color palette with deep green and gold as primary brand colors. Set strong, bold typography styles for headings using serif or display fonts. Define consistent spacing, borders, and visual elements that create a professional sports academy aesthetic. Ensure the theme is enforced globally across all components."
-        },
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Extend Tailwind configuration to include custom deep green and gold color values in the theme palette. Define custom typography settings for headings to use strong, prominent font styles. Add any custom spacing or design tokens needed to support the cricket-themed visual design consistently."
+          "description": "Add the academy address 'Shri Balaji Cricket Academy, Malerna Gaon, Ballabgarh, Faridabad 121004' to the contact details section in the footer. Include a MapPin icon from lucide-react (or match the existing icon library used) alongside the address text. Ensure the address text is readable against the footer's background color and follows the same styling as other contact details (phone, email, etc.) in the footer, maintaining consistency with the cricket-themed green and gold color palette."
         }
       ]
     }
